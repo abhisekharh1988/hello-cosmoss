@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ca61eef6-0808-4ae7-8910-7d7e139ddace",
+		"name": "hello-cosmos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"kro-cloud-migration-1\",\n\t\"taskName\":\"Scaffold for experimenting on Azure Compute Service\",\n\t\"developerName\":\"Abhisek Harh\",\n\t\"status\":\"WIP\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"task"
+					]
+				},
+				"description": "Create a task"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"task"
+					]
+				},
+				"description": "Get all tasks"
+			},
+			"response": []
+		}
+	]
+}
